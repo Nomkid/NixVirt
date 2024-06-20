@@ -325,6 +325,10 @@ let
                     (subelem "readonly" [ ] [ ])
                     addresselem
                     (subelem "boot" [ (subattr "order" typeInt) ] [ ])
+                    # TODO make sure these are only there for scsi type
+                    (subelem "serial" [ ] typeString)
+                    (subelem "vendor" [ ] typeString)
+                    (subelem "product" [ ] typeString)
                   ]
                 )
               )
